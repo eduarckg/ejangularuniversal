@@ -7,13 +7,15 @@
     "ng": "ng",
     "start": "npm run dev:ssr",
     "build": "ng build",
+    "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e",
     "dev:ssr": "ng run angular.io-example:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
     "build:ssr": "ng build && ng run angular.io-example:server",
-    "prerender": "ng run angular.io-example:prerender"
+    "prerender": "ng run angular.io-example:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
